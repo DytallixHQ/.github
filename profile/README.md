@@ -58,6 +58,7 @@ These are the three developer milestones Dytallix is optimizing for:
 | Repository | Description | Status |
 |------------|-------------|--------|
 | [dytallix-sdk](https://github.com/DytallixHQ/dytallix-sdk) | Official SDK and CLI. ML-DSA-65 keypairs, Bech32m addresses, transaction building, and the `dytallix` CLI with three developer milestones | Active |
+| [dytallix-node](https://github.com/DytallixHQ/dytallix-node) | Public node, RPC, and backend source for the live testnet. Transaction submission, gas accounting, mempool, execution, and PQC verification | Live |
 | [dytallix-faucet](https://github.com/DytallixHQ/dytallix-faucet) | Testnet faucet — dispenses DGT and DRT to addresses on request | Testnet |
 | [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer) | Block explorer — blocks, transactions, validators, epoch data, and dimensional fee breakdown showing C-Gas and B-Gas separately | Testnet |
 | [dytallix-docs](https://github.com/DytallixHQ/dytallix-docs) | Official documentation — getting started, CLI reference, SDK reference, core concepts, and FAQ | In progress |
