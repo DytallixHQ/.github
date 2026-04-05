@@ -16,28 +16,38 @@ Dytallix is built so you never have to migrate.
 
 ---
 
-## First 60 Seconds
+## Developer Path
 
-If you are evaluating Dytallix, start here.
+These are the three developer milestones Dytallix is optimizing for:
 
-Generate your first ML-DSA-65 keypair and print a D-Addr:
+1. **First keypair: under 60 seconds**
 
-```bash
-git clone https://github.com/DytallixHQ/dytallix-sdk
-cd dytallix-sdk
-cargo run --example first-keypair
-```
+   Generate your first ML-DSA-65 keypair and print a D-Addr:
 
-You should see a generated keypair, a printed Bech32m D-Addr, and a valid signature check.
+   ```bash
+   git clone https://github.com/DytallixHQ/dytallix-sdk
+   cd dytallix-sdk
+   cargo run --example first-keypair
+   ```
 
-If you want a funded testnet wallet instead:
+   Start here: [first-keypair example](https://github.com/DytallixHQ/dytallix-sdk/blob/main/examples/first-keypair.rs)
 
-```bash
-cargo install --git https://github.com/DytallixHQ/dytallix-sdk dytallix-cli --bin dytallix
-dytallix init
-```
+2. **First transaction on testnet: 2-3 minutes**
 
-That path creates a wallet, prints the D-Addr, and requests DGT and DRT from the faucet.
+   Create a wallet, print the D-Addr, and request DGT and DRT from the faucet:
+
+   ```bash
+   cargo install --git https://github.com/DytallixHQ/dytallix-sdk dytallix-cli --bin dytallix
+   dytallix init
+   ```
+
+   Continue with: [first-transaction example](https://github.com/DytallixHQ/dytallix-sdk/blob/main/examples/first-transaction.rs) · [Explorer](https://explorer.dytallix.com) · [Releases](https://github.com/DytallixHQ/dytallix-sdk/releases)
+
+3. **First contract: under 15 minutes**
+
+   Deploy a WASM contract from the CLI and move to contract iteration fast.
+
+   Continue with: [deploy-contract example](https://github.com/DytallixHQ/dytallix-sdk/blob/main/examples/deploy-contract.rs) · [dytallix-contracts](https://github.com/DytallixHQ/dytallix-contracts) · [Docs](https://dytallix.com/docs)
 
 → [SDK repo](https://github.com/DytallixHQ/dytallix-sdk) · [Releases](https://github.com/DytallixHQ/dytallix-sdk/releases) · [Full getting started guide](https://dytallix.com/docs)
 
