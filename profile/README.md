@@ -27,7 +27,7 @@ These are the three developer milestones Dytallix is optimizing for:
    ```bash
    git clone https://github.com/DytallixHQ/dytallix-sdk
    cd dytallix-sdk
-   cargo run --example first-keypair
+   cargo run -p dytallix-sdk --example first-keypair
    ```
 
    Start here: [first-keypair example](https://github.com/DytallixHQ/dytallix-sdk/blob/main/examples/first-keypair.rs)
