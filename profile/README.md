@@ -16,6 +16,33 @@ Dytallix is built so you never have to migrate.
 
 ---
 
+## First 60 Seconds
+
+If you are evaluating Dytallix, start here.
+
+Generate your first ML-DSA-65 keypair and print a D-Addr:
+
+```bash
+git clone https://github.com/DytallixHQ/dytallix-sdk
+cd dytallix-sdk
+cargo run --example first-keypair
+```
+
+You should see a generated keypair, a printed Bech32m D-Addr, and a valid signature check.
+
+If you want a funded testnet wallet instead:
+
+```bash
+cargo install --git https://github.com/DytallixHQ/dytallix-sdk dytallix-cli --bin dytallix
+dytallix init
+```
+
+That path creates a wallet, prints the D-Addr, and requests DGT and DRT from the faucet.
+
+→ [SDK repo](https://github.com/DytallixHQ/dytallix-sdk) · [Releases](https://github.com/DytallixHQ/dytallix-sdk/releases) · [Full getting started guide](https://dytallix.com/docs)
+
+---
+
 ## Repositories
 
 | Repository | Description | Status |
@@ -25,22 +52,6 @@ Dytallix is built so you never have to migrate.
 | [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer) | Block explorer — blocks, transactions, validators, epoch data, and dimensional fee breakdown showing C-Gas and B-Gas separately | Testnet |
 | [dytallix-docs](https://github.com/DytallixHQ/dytallix-docs) | Official documentation — getting started, CLI reference, SDK reference, core concepts, and FAQ | In progress |
 | [dytallix-contracts](https://github.com/DytallixHQ/dytallix-contracts) | On-chain WASM protocol contracts — emission controller, DGT, DRT, staking, governance, and algorithm registry | In progress |
-
----
-
-## Get Started in 60 Seconds
-
-```bash
-cargo add dytallix-sdk
-```
-
-```bash
-dytallix init
-```
-
-One command generates an ML-DSA-65 keypair, derives a Bech32m address, and funds it with DGT and DRT from the testnet faucet. No configuration. No accounts. No browser.
-
-→ [Full getting started guide](https://dytallix.com/docs)
 
 ---
 
