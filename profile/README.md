@@ -16,31 +16,53 @@ Dytallix is built so you never have to migrate.
 
 ---
 
+## Developer Path
+
+These are the three developer milestones Dytallix is optimizing for:
+
+1. **First keypair: under 60 seconds**
+
+   Generate your first ML-DSA-65 keypair and print a D-Addr:
+
+   ```bash
+   git clone https://github.com/DytallixHQ/dytallix-sdk
+   cd dytallix-sdk
+   cargo run -p dytallix-sdk --example first-keypair
+   ```
+
+   Start here: [first-keypair example](https://github.com/DytallixHQ/dytallix-sdk/blob/main/examples/first-keypair.rs)
+
+2. **First transaction on testnet: 2-3 minutes**
+
+   Create a wallet, print the D-Addr, and request DGT and DRT from the faucet:
+
+   ```bash
+   cargo install --git https://github.com/DytallixHQ/dytallix-sdk dytallix-cli --bin dytallix
+   dytallix init
+   ```
+
+   Continue with: [first-transaction example](https://github.com/DytallixHQ/dytallix-sdk/blob/main/examples/first-transaction.rs) · [Explorer](https://explorer.dytallix.com) · [Releases](https://github.com/DytallixHQ/dytallix-sdk/releases)
+
+3. **First contract: under 15 minutes**
+
+   Deploy a WASM contract from the CLI and move to contract iteration fast.
+
+   Continue with: [deploy-contract example](https://github.com/DytallixHQ/dytallix-sdk/blob/main/examples/deploy-contract.rs) · [dytallix-contracts](https://github.com/DytallixHQ/dytallix-contracts) · [Docs](https://dytallix.com/docs)
+
+→ [SDK repo](https://github.com/DytallixHQ/dytallix-sdk) · [Releases](https://github.com/DytallixHQ/dytallix-sdk/releases) · [Full getting started guide](https://dytallix.com/docs)
+
+---
+
 ## Repositories
 
 | Repository | Description | Status |
 |------------|-------------|--------|
 | [dytallix-sdk](https://github.com/DytallixHQ/dytallix-sdk) | Official SDK and CLI. ML-DSA-65 keypairs, Bech32m addresses, transaction building, and the `dytallix` CLI with three developer milestones | Active |
+| [dytallix-node](https://github.com/DytallixHQ/dytallix-node) | Public node, RPC, and backend source for the live testnet. Transaction submission, gas accounting, mempool, execution, and PQC verification | Live |
 | [dytallix-faucet](https://github.com/DytallixHQ/dytallix-faucet) | Testnet faucet — dispenses DGT and DRT to addresses on request | Testnet |
 | [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer) | Block explorer — blocks, transactions, validators, epoch data, and dimensional fee breakdown showing C-Gas and B-Gas separately | Testnet |
 | [dytallix-docs](https://github.com/DytallixHQ/dytallix-docs) | Official documentation — getting started, CLI reference, SDK reference, core concepts, and FAQ | In progress |
 | [dytallix-contracts](https://github.com/DytallixHQ/dytallix-contracts) | On-chain WASM protocol contracts — emission controller, DGT, DRT, staking, governance, and algorithm registry | In progress |
-
----
-
-## Get Started in 60 Seconds
-
-```bash
-cargo add dytallix-sdk
-```
-
-```bash
-dytallix init
-```
-
-One command generates an ML-DSA-65 keypair, derives a Bech32m address, and funds it with DGT and DRT from the testnet faucet. No configuration. No accounts. No browser.
-
-→ [Full getting started guide](https://dytallix.com/docs)
 
 ---
 
