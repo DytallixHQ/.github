@@ -58,11 +58,12 @@ These are the three developer milestones Dytallix is optimizing for:
 | Repository | Description | Status |
 |------------|-------------|--------|
 | [dytallix-sdk](https://github.com/DytallixHQ/dytallix-sdk) | Official SDK and CLI. ML-DSA-65 keypairs, Bech32m addresses, transaction building, and the `dytallix` CLI with three developer milestones | Active |
+| [dytallix-pqc](https://github.com/DytallixHQ/dytallix-pqc) | Standalone post-quantum cryptography crate and CLI tools — Dilithium, Falcon, SPHINCS+, Kyber, bridge signing, key generation, verification, performance benchmarks, and PQC evidence generation | Active |
 | [dytallix-node](https://github.com/DytallixHQ/dytallix-node) | Public node, RPC, and backend source for the live testnet. Transaction submission, gas accounting, mempool, execution, and PQC verification | Live |
 | [dytallix-faucet](https://github.com/DytallixHQ/dytallix-faucet) | Testnet faucet — dispenses DGT and DRT to addresses on request | Testnet |
 | [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer) | Block explorer — blocks, transactions, validators, epoch data, and dimensional fee breakdown showing C-Gas and B-Gas separately | Testnet |
-| [dytallix-docs](https://github.com/DytallixHQ/dytallix-docs) | Official documentation — getting started, CLI reference, SDK reference, core concepts, and FAQ | In progress |
-| [dytallix-contracts](https://github.com/DytallixHQ/dytallix-contracts) | On-chain WASM protocol contracts — emission controller, DGT, DRT, staking, governance, and algorithm registry | In progress |
+| [dytallix-docs](https://github.com/DytallixHQ/dytallix-docs) | Official documentation — getting started, CLI reference, SDK reference, core concepts, and FAQ | Testnet |
+| [dytallix-contracts](https://github.com/DytallixHQ/dytallix-contracts) | On-chain WASM protocol contracts — emission controller, DGT, DRT, staking, governance, and algorithm registry | Testnet |
 
 ---
 
@@ -77,6 +78,8 @@ These are the three developer milestones Dytallix is optimizing for:
 | Bech32m | BIP350 | Address encoding with checksum |
 
 All parameter sizes are exact. ML-DSA-65 public key is 1,952 bytes. Signature is 3,309 bytes. A single mistyped character in any address fails checksum validation. There is no classical fallback.
+
+Reference implementation and developer docs: [dytallix-pqc](https://github.com/DytallixHQ/dytallix-pqc) · [PQC docs](https://github.com/DytallixHQ/dytallix-pqc/tree/main/docs) · [CLI tools](https://github.com/DytallixHQ/dytallix-pqc/tree/main/src/bin)
 
 ---
 
