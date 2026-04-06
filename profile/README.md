@@ -58,7 +58,7 @@ These are the three developer milestones Dytallix is optimizing for:
 | Repository | Description | Status |
 |------------|-------------|--------|
 | [dytallix-sdk](https://github.com/DytallixHQ/dytallix-sdk) | Official SDK and CLI. ML-DSA-65 keypairs, Bech32m addresses, transaction building, and the `dytallix` CLI with three developer milestones | Active |
-| [dytallix-pqc](https://github.com/DytallixHQ/dytallix-pqc) | Standalone post-quantum cryptography crate and CLI tools — Dilithium, Falcon, SPHINCS+, Kyber, bridge signing, key generation, verification, performance benchmarks, and PQC evidence generation | Active |
+| [dytallix-pqc](https://github.com/DytallixHQ/dytallix-pqc) | Standalone post-quantum cryptography crate and CLI tools — ML-DSA, FN-DSA, SLH-DSA, ML-KEM, bridge signing, key generation, verification, performance benchmarks, and PQC evidence generation | Active |
 | [dytallix-node](https://github.com/DytallixHQ/dytallix-node) | Public node, RPC, and backend source for the live testnet. Transaction submission, gas accounting, mempool, execution, and PQC verification | Live |
 | [dytallix-faucet](https://github.com/DytallixHQ/dytallix-faucet) | Testnet faucet — dispenses DGT and DRT to addresses on request | Testnet |
 | [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer) | Block explorer — blocks, transactions, validators, epoch data, and dimensional fee breakdown showing C-Gas and B-Gas separately | Testnet |
@@ -71,9 +71,9 @@ These are the three developer milestones Dytallix is optimizing for:
 
 | Primitive | Standard | Use |
 |-----------|----------|-----|
-| ML-DSA-65 | FIPS 204 / Dilithium3 | All transaction signing and validator votes |
-| ML-KEM-768 | FIPS 203 / Kyber768 | All P2P transport and handshakes |
-| SLH-DSA-SHAKE-192s | FIPS 205 / SPHINCS+ | Optional cold storage signing |
+| ML-DSA-65 | FIPS 204 | All transaction signing and validator votes |
+| ML-KEM-768 | FIPS 203 | All P2P transport and handshakes |
+| SLH-DSA-SHAKE-192s | FIPS 205 | Optional cold storage signing |
 | BLAKE3 | — | State hashing and address derivation |
 | Bech32m | BIP350 | Address encoding with checksum |
 
