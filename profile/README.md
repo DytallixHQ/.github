@@ -41,7 +41,7 @@ These are the three developer milestones Dytallix is optimizing for:
    dytallix init
    ```
 
-   Continue with: [first-transaction example](https://github.com/DytallixHQ/dytallix-sdk/blob/main/examples/first-transaction.rs) · [Explorer](https://explorer.dytallix.com) · [Releases](https://github.com/DytallixHQ/dytallix-sdk/releases)
+   Continue with: [first-transaction example](https://github.com/DytallixHQ/dytallix-sdk/blob/main/examples/first-transaction.rs) · [Explorer](https://dytallix.com/build/blockchain) · [Releases](https://github.com/DytallixHQ/dytallix-sdk/releases)
 
 3. **First contract: under 15 minutes**
 
@@ -60,10 +60,17 @@ These are the three developer milestones Dytallix is optimizing for:
 | [dytallix-sdk](https://github.com/DytallixHQ/dytallix-sdk) | Official SDK and CLI. ML-DSA-65 keypairs, Bech32m addresses, transaction building, and the `dytallix` CLI with three developer milestones | Active |
 | [dytallix-pqc](https://github.com/DytallixHQ/dytallix-pqc) | Standalone post-quantum cryptography crate and CLI tools — ML-DSA, FN-DSA, SLH-DSA, ML-KEM, bridge signing, key generation, verification, performance benchmarks, and PQC evidence generation | Active |
 | [dytallix-node](https://github.com/DytallixHQ/dytallix-node) | Public node, RPC, and backend source for the live testnet. Transaction submission, gas accounting, mempool, execution, and PQC verification | Live |
-| [dytallix-faucet](https://github.com/DytallixHQ/dytallix-faucet) | Testnet faucet — dispenses DGT and DRT to addresses on request | Testnet |
-| [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer) | Block explorer — blocks, transactions, validators, epoch data, and dimensional fee breakdown showing C-Gas and B-Gas separately | Testnet |
-| [dytallix-docs](https://github.com/DytallixHQ/dytallix-docs) | Official documentation — getting started, CLI reference, SDK reference, core concepts, and FAQ | Testnet |
-| [dytallix-contracts](https://github.com/DytallixHQ/dytallix-contracts) | On-chain WASM protocol contracts — emission controller, DGT, DRT, staking, governance, and algorithm registry | Testnet |
+| [dytallix-faucet](https://github.com/DytallixHQ/dytallix-faucet) | Public faucet service repository documenting the live `dytallix.com/api/faucet` endpoints and request flow | Testnet |
+| [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer) | Public explorer service repository documenting the live `dytallix.com/build/blockchain` page and blockchain API surface | Testnet |
+| [dytallix-docs](https://github.com/DytallixHQ/dytallix-docs) | Official documentation — getting started, CLI reference, SDK reference, core concepts, and FAQ | In progress |
+| [dytallix-contracts](https://github.com/DytallixHQ/dytallix-contracts) | On-chain WASM protocol contracts — emission controller, DGT, DRT, staking, governance, and algorithm registry | In progress |
+
+---
+
+Canonical public integration guidance lives in
+[dytallix-docs](https://github.com/DytallixHQ/dytallix-docs). The explorer and
+faucet repositories document the live public service surfaces; they are not the
+deployed frontend or backend source trees for those hosted services.
 
 ---
 
@@ -120,8 +127,8 @@ If you find something broken or something that could be better, open an issue. I
 
 ## Links
 
-[Website](https://dytallix.com) · [Documentation](https://dytallix.com/docs) · [Whitepapers](https://dytallix.com/whitepaper) · [Discord](https://discord.gg/eyVvu5kmPG) · [Explorer](https://explorer.dytallix.com) · [Faucet](https://faucet.dytallix.com) · [X](https://x.com/dytallixhq)
+[Website](https://dytallix.com) · [Documentation](https://dytallix.com/docs) · [Whitepapers](https://dytallix.com/whitepaper) · [Discord](https://discord.gg/eyVvu5kmPG) · [Explorer](https://dytallix.com/build/blockchain) · [Faucet](https://dytallix.com/api/faucet/status) · [X](https://x.com/dytallixhq)
 
 ---
 
-*Testnet is live. Mainnet is on the roadmap. Everything here is open source.*
+*Testnet is live. Mainnet is on the roadmap. Core protocol and developer tooling are open source; the public explorer and faucet repositories document the live service surfaces.*
