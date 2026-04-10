@@ -34,18 +34,29 @@ These are the three developer milestones Dytallix is optimizing for:
 
 2. **First transaction on testnet: 2-3 minutes**
 
-   Create a wallet, print the D-Addr, and request DGT and DRT from the faucet:
+   Create a wallet, print the D-Addr, request DGT and DRT from the faucet, then
+   submit a real transaction:
 
    ```bash
-   cargo install --git https://github.com/DytallixHQ/dytallix-sdk dytallix-cli --bin dytallix
+   cargo install --git https://github.com/DytallixHQ/dytallix-sdk.git dytallix-cli --bin dytallix
    dytallix init
+   dytallix send <daddr> 100
    ```
+
+   Use the D-Addr printed by `dytallix init` or any other testnet address.
 
    Continue with: [first-transaction example](https://github.com/DytallixHQ/dytallix-sdk/blob/main/examples/first-transaction.rs) · [Explorer](https://dytallix.com/build/blockchain) · [Releases](https://github.com/DytallixHQ/dytallix-sdk/releases)
 
-3. **First contract: under 15 minutes**
+3. **First contract build: under 15 minutes**
 
-   Deploy a WASM contract from the CLI and move to contract iteration fast.
+   Build a minimal WASM contract now. The default public gateway currently does
+   not accept `POST /contracts/deploy`, so actual deploys require a direct node
+   endpoint or a local node.
+
+   ```bash
+   rustup target add wasm32-unknown-unknown
+   cargo build --manifest-path examples/contracts/minimal_contract/Cargo.toml --target wasm32-unknown-unknown --release
+   ```
 
    Continue with: [deploy-contract example](https://github.com/DytallixHQ/dytallix-sdk/blob/main/examples/deploy-contract.rs) · [dytallix-contracts](https://github.com/DytallixHQ/dytallix-contracts) · [Docs](https://dytallix.com/docs)
 
