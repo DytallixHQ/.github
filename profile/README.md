@@ -2,6 +2,8 @@
 
 **The first solo-built PQC-native Layer 1 blockchain.**
 
+Keypair, faucet, transfer, and basic contract lifecycle are available for experimentation on the public testnet. Staking, governance, and some advanced or operator paths are not yet production-complete.
+
 Dytallix implements NIST-standardized PQC primitives at every layer of the protocol. ML-DSA-65 for all transaction signing and validator votes. ML-KEM-768 for all P2P transport. Canonical Bech32m addresses. No ECDSA. No hybrid mode. No legacy accounts. Every address, every signature, every handshake is quantum-secure from inception.
 
 Designed, built, and deployed by one person in nine months. Testnet is live.
@@ -70,10 +72,10 @@ These are the three developer milestones Dytallix is optimizing for:
 |------------|-------------|--------|
 | [dytallix-sdk](https://github.com/DytallixHQ/dytallix-sdk) | Official SDK and CLI. ML-DSA-65 keypairs, Bech32m addresses, transaction building, and the `dytallix` CLI with three developer milestones | Active |
 | [dytallix-pqc](https://github.com/DytallixHQ/dytallix-pqc) | Standalone post-quantum cryptography crate and CLI tools — ML-DSA, FN-DSA, SLH-DSA, ML-KEM, bridge signing, key generation, verification, performance benchmarks, and PQC evidence generation | Active |
-| [dytallix-node](https://github.com/DytallixHQ/dytallix-node) | Public node, RPC, and backend source for the live testnet. Transaction submission, gas accounting, mempool, execution, and PQC verification | Live |
-| [dytallix-faucet](https://github.com/DytallixHQ/dytallix-faucet) | Public faucet service repository documenting the live `dytallix.com/api/faucet` endpoints and request flow | Testnet |
-| [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer) | Public explorer service repository documenting the live `dytallix.com/build/blockchain` page and blockchain API surface | Testnet |
-| [dytallix-docs](https://github.com/DytallixHQ/dytallix-docs) | Official documentation — getting started, CLI reference, SDK reference, core concepts, and FAQ | In progress |
+| [dytallix-node](https://github.com/DytallixHQ/dytallix-node) | Public node, RPC, and backend source for the public testnet, with reproducible deployment templates and a published machine-readable capability contract | Published snapshot + deploy path |
+| [dytallix-faucet](https://github.com/DytallixHQ/dytallix-faucet) | Docs-only faucet service-surface repository for the live `dytallix.com/api/faucet` endpoints and request flow | Docs-only surface |
+| [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer) | Docs-only explorer service-surface repository for the live `dytallix.com/build/blockchain` page and blockchain API surface | Docs-only surface |
+| [dytallix-docs](https://github.com/DytallixHQ/dytallix-docs) | Canonical public documentation for getting started, CLI reference, SDK reference, core concepts, and FAQ | Canonical docs |
 | [dytallix-contracts](https://github.com/DytallixHQ/dytallix-contracts) | On-chain WASM protocol contracts — emission controller, DGT, DRT, staking, governance, and algorithm registry | In progress |
 
 ---
@@ -82,6 +84,18 @@ Canonical public integration guidance lives in
 [dytallix-docs](https://github.com/DytallixHQ/dytallix-docs). The explorer and
 faucet repositories document the live public service surfaces; they are not the
 deployed frontend or backend source trees for those hosted services.
+
+The live website frontend source is not yet represented by a dedicated public
+repository. The docs repo publishes the documentation content, not the hosted
+site frontend implementation. The live explorer page currently lives inside
+that same unpublished website frontend source tree.
+
+The live faucet backend source also exists in a separate unpublished production
+checkout and is not yet represented by the public `dytallix-faucet` repo.
+
+The node repo should still be treated as a published source snapshot plus a
+reproducible deployment path until clean-checkout production provenance is
+independently evidenced.
 
 ---
 
