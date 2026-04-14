@@ -73,7 +73,6 @@ These are the three developer milestones Dytallix is optimizing for:
 | [dytallix-sdk](https://github.com/DytallixHQ/dytallix-sdk) | Official SDK and CLI. ML-DSA-65 keypairs, Bech32m addresses, transaction building, and the `dytallix` CLI with three developer milestones | Active |
 | [dytallix-pqc](https://github.com/DytallixHQ/dytallix-pqc) | Standalone post-quantum cryptography crate and CLI tools — ML-DSA, FN-DSA, SLH-DSA, ML-KEM, bridge signing, key generation, verification, performance benchmarks, and PQC evidence generation | Active |
 | [dytallix-node](https://github.com/DytallixHQ/dytallix-node) | Public node, RPC, and backend source for the public testnet, with clean-checkout production provenance and a published machine-readable capability contract | Canonical public node source |
-| [dytallix-website](https://github.com/DytallixHQ/dytallix-website) | Public website frontend source for `dytallix.com`, including the hosted explorer UI and faucet page | Canonical website frontend source |
 | [dytallix-faucet](https://github.com/DytallixHQ/dytallix-faucet) | Public faucet backend source for the live `dytallix.com/api/faucet` flow, including edge compatibility config | Canonical faucet backend source |
 | [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer) | Explorer service-surface documentation repo for the live `dytallix.com/build/blockchain` page and blockchain API surface | Docs-only surface map |
 | [dytallix-docs](https://github.com/DytallixHQ/dytallix-docs) | Canonical public documentation for getting started, CLI reference, SDK reference, core concepts, and FAQ | Canonical docs |
@@ -83,9 +82,8 @@ These are the three developer milestones Dytallix is optimizing for:
 
 Canonical public integration guidance lives in
 [dytallix-docs](https://github.com/DytallixHQ/dytallix-docs). The live website
-frontend source is now public in
-[dytallix-website](https://github.com/DytallixHQ/dytallix-website), including
-the hosted explorer UI. The live faucet backend source is now public in
+frontend and hosted explorer UI remain public runtime surfaces at
+[dytallix.com](https://dytallix.com), and the live faucet backend source is public in
 [dytallix-faucet](https://github.com/DytallixHQ/dytallix-faucet).
 
 The [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer)
@@ -119,17 +117,15 @@ We publish the parts of this protocol we are not fully satisfied with. A project
 - **Signature aggregation** — ML-DSA does not support constant-size non-interactive aggregation like BLS. Checkpoint finality uses Bitfield-Compressed Merkle Proofs instead. If efficient PQC aggregation is standardized we will adopt it.
 - **Handshake formal verification** — the Noise_IK_PQC handshake has not been formally analyzed with ProVerif or Tamarin. Scheduled for pre-mainnet audit.
 
-Full technical detail in the [Technical Whitepaper](https://dytallix.com/whitepaper).
+Full technical detail and current long-form materials live at [Resources](https://dytallix.com/resources).
 
 ---
 
 ## Whitepapers
 
-Three documents covering different depths of the protocol:
+Long-form protocol papers and supporting materials are indexed on the main resources page:
 
-- [Foundational Whitepaper](https://dytallix.com/whitepaper) — purpose, principles, architecture overview, business case, and roadmap
-- [Technical Whitepaper](https://dytallix.com/whitepaper) — cryptographic specification, consensus formalization, networking, execution layer, and security analysis
-- [Tokenomics Whitepaper](https://dytallix.com/whitepaper) — dual token model, PID emission controller, dimensional fee market, and governance
+- [Resources](https://dytallix.com/resources) — whitepapers, protocol background, and supporting materials
 
 ---
 
@@ -147,7 +143,7 @@ If you find something broken or something that could be better, open an issue. I
 
 ## Links
 
-[Website](https://dytallix.com) · [Documentation](https://dytallix.com/docs) · [Whitepapers](https://dytallix.com/whitepaper) · [Discord](https://discord.gg/eyVvu5kmPG) · [Explorer](https://dytallix.com/build/blockchain) · [Faucet](https://dytallix.com/api/faucet/status) · [X](https://x.com/dytallixhq)
+[Website](https://dytallix.com) · [Documentation](https://dytallix.com/docs) · [Resources](https://dytallix.com/resources) · [Discord](https://discord.gg/eyVvu5kmPG) · [Explorer](https://dytallix.com/build/blockchain) · [Faucet](https://dytallix.com/api/faucet/status) · [X](https://x.com/dytallixhq)
 
 ---
 
