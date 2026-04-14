@@ -72,30 +72,25 @@ These are the three developer milestones Dytallix is optimizing for:
 |------------|-------------|--------|
 | [dytallix-sdk](https://github.com/DytallixHQ/dytallix-sdk) | Official SDK and CLI. ML-DSA-65 keypairs, Bech32m addresses, transaction building, and the `dytallix` CLI with three developer milestones | Active |
 | [dytallix-pqc](https://github.com/DytallixHQ/dytallix-pqc) | Standalone post-quantum cryptography crate and CLI tools — ML-DSA, FN-DSA, SLH-DSA, ML-KEM, bridge signing, key generation, verification, performance benchmarks, and PQC evidence generation | Active |
-| [dytallix-node](https://github.com/DytallixHQ/dytallix-node) | Public node, RPC, and backend source for the public testnet, with reproducible deployment templates and a published machine-readable capability contract | Published snapshot + deploy path |
-| [dytallix-faucet](https://github.com/DytallixHQ/dytallix-faucet) | Docs-only faucet service-surface repository for the live `dytallix.com/api/faucet` endpoints and request flow | Docs-only surface |
-| [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer) | Docs-only explorer service-surface repository for the live `dytallix.com/build/blockchain` page and blockchain API surface | Docs-only surface |
+| [dytallix-node](https://github.com/DytallixHQ/dytallix-node) | Public node, RPC, and backend source for the public testnet, with clean-checkout production provenance and a published machine-readable capability contract | Canonical public node source |
+| [dytallix-website](https://github.com/DytallixHQ/dytallix-website) | Public website frontend source for `dytallix.com`, including the hosted explorer UI and faucet page | Canonical website frontend source |
+| [dytallix-faucet](https://github.com/DytallixHQ/dytallix-faucet) | Public faucet backend source for the live `dytallix.com/api/faucet` flow, including edge compatibility config | Canonical faucet backend source |
+| [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer) | Explorer service-surface documentation repo for the live `dytallix.com/build/blockchain` page and blockchain API surface | Docs-only surface map |
 | [dytallix-docs](https://github.com/DytallixHQ/dytallix-docs) | Canonical public documentation for getting started, CLI reference, SDK reference, core concepts, and FAQ | Canonical docs |
 | [dytallix-contracts](https://github.com/DytallixHQ/dytallix-contracts) | On-chain WASM protocol contracts — emission controller, DGT, DRT, staking, governance, and algorithm registry | In progress |
 
 ---
 
 Canonical public integration guidance lives in
-[dytallix-docs](https://github.com/DytallixHQ/dytallix-docs). The explorer and
-faucet repositories document the live public service surfaces; they are not the
-deployed frontend or backend source trees for those hosted services.
+[dytallix-docs](https://github.com/DytallixHQ/dytallix-docs). The live website
+frontend source is now public in
+[dytallix-website](https://github.com/DytallixHQ/dytallix-website), including
+the hosted explorer UI. The live faucet backend source is now public in
+[dytallix-faucet](https://github.com/DytallixHQ/dytallix-faucet).
 
-The live website frontend source is not yet represented by a dedicated public
-repository. The docs repo publishes the documentation content, not the hosted
-site frontend implementation. The live explorer page currently lives inside
-that same unpublished website frontend source tree.
-
-The live faucet backend source also exists in a separate unpublished production
-checkout and is not yet represented by the public `dytallix-faucet` repo.
-
-The node repo should still be treated as a published source snapshot plus a
-reproducible deployment path until clean-checkout production provenance is
-independently evidenced.
+The [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer)
+repository remains a docs-only surface map for the explorer endpoints. The node
+repo now has clean-checkout production provenance from the public deployment.
 
 ---
 
