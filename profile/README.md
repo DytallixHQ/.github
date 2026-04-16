@@ -36,16 +36,22 @@ These are the three developer milestones Dytallix is optimizing for:
 
 2. **First transaction on testnet: 2-3 minutes**
 
-   Create a wallet, print the D-Addr, request DGT and DRT from the faucet, then
-   submit a real transaction:
+   Create a funded sender wallet, create a separate recipient wallet, then
+   submit and verify a real transaction:
 
    ```bash
    cargo install --git https://github.com/DytallixHQ/dytallix-sdk.git dytallix-cli --bin dytallix
    dytallix init
-   dytallix send <daddr> 100
+   dytallix wallet create --name recipient
+   dytallix wallet list
+   dytallix wallet switch default
+   dytallix send <recipient-daddr> 100
+   dytallix wallet switch recipient
+   dytallix balance
    ```
 
-   Use the D-Addr printed by `dytallix init` or any other testnet address.
+   Use a different recipient address than the one printed by `dytallix init`
+   (do not self-send).
 
    Continue with: [first-transaction example](https://github.com/DytallixHQ/dytallix-sdk/blob/main/examples/first-transaction.rs) · [Explorer](https://dytallix.com/build/blockchain) · [Releases](https://github.com/DytallixHQ/dytallix-sdk/releases)
 
