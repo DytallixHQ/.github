@@ -1,4 +1,4 @@
-# Contributing To DytallixHQ Repositories
+# Contributing to DytallixHQ Repositories
 
 This repository provides the default contribution guidance for public
 DytallixHQ projects.

@@ -21,12 +21,6 @@ body:
     id: alternatives
     attributes:
       label: Alternatives considered
-*** Add File: /Users/rickglenn/Desktop/Dytallix/.tmp-dytallix-dotgithub/.github/ISSUE_TEMPLATE/config.yml
-blank_issues_enabled: false
-contact_links:
-  - name: Security report
-    url: https://github.com/DytallixHQ/.github/blob/main/SECURITY.md
-    about: Use the private security reporting process for vulnerabilities.
-  - name: Documentation
-    url: https://dytallix.com/docs
-    about: Check the public documentation before opening a general usage issue.
+      description: Describe any alternative solutions or approaches you evaluated.
+    validations:
+      required: false
