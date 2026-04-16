@@ -1,0 +1,45 @@
+name: Bug report
+description: Report a reproducible bug or public behavior mismatch.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for reproducible bugs and public behavior mismatches.
+        Do not report security vulnerabilities here.
+  - type: input
+    id: repo
+    attributes:
+      label: Repository
+      description: Which DytallixHQ repository is affected?
+      placeholder: dytallix-sdk
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the bug and the expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Provide exact steps, commands, requests, or inputs.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Logs, screenshots, command output, or API responses.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: This is not a security vulnerability report.
+          required: true
