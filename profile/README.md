@@ -18,6 +18,20 @@ Dytallix is built so you never have to migrate.
 
 ---
 
+## Prerequisites
+
+Install [Rust](https://www.rust-lang.org/tools/install) with `rustup`. That
+provides the Rust toolchain, `cargo`, and target management used throughout the
+Dytallix Rust repositories.
+
+If you plan to build WASM contracts locally, add the standard target:
+
+```bash
+rustup target add wasm32-unknown-unknown
+```
+
+---
+
 ## Developer Path
 
 These are the three developer milestones Dytallix is optimizing for:
