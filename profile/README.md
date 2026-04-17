@@ -71,9 +71,10 @@ These are the three developer milestones Dytallix is optimizing for:
 
 3. **First contract build: under 15 minutes**
 
-   Build a minimal WASM contract now. The default public gateway currently does
-   not accept `POST /contracts/deploy`, so actual deploys require a direct node
-   endpoint or a local node.
+   Build a minimal WASM contract now. The default public gateway accepts
+   `POST /contracts/deploy` and `POST /contracts/call`; use a direct node
+   endpoint or a local node only when you want local testing or custom
+   infrastructure.
 
    ```bash
    rustup target add wasm32-unknown-unknown
