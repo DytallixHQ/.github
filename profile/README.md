@@ -20,10 +20,10 @@ Dytallix is built so you never have to migrate.
 
 ### Prerequisites
 
-- <a href="https://www.rust-lang.org/tools/install">Rust</a> (stable toolchain) and Cargo.  
+- [Rust](https://www.rust-lang.org/tools/install) (stable toolchain) and Cargo.  
   Install via rustup (recommended):
   ```bash
-  curl --proto '=https' --tlsv1.2 -sSf <a href="https://sh.rustup.rs">https://sh.rustup.rs</a> | sh
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
   ```
 
 ---
@@ -73,6 +73,16 @@ These are the three developer milestones Dytallix is optimizing for:
    Continue with: [deploy-contract example](https://github.com/DytallixHQ/dytallix-sdk/blob/main/examples/deploy-contract.rs) · [dytallix-contracts](https://github.com/DytallixHQ/dytallix-contracts) · [Docs](https://dytallix.com/docs)
 
 → [SDK repo](https://github.com/DytallixHQ/dytallix-sdk) · [Releases](https://github.com/DytallixHQ/dytallix-sdk/releases) · [Full getting started guide](https://dytallix.com/docs)
+
+---
+
+## Recommended Pinned Repositories
+
+For broad developer outreach, pin these repositories on the organization page:
+
+1. [dytallix-sdk](https://github.com/DytallixHQ/dytallix-sdk) — primary entry point for keypair generation, first transaction, and SDK/CLI integration.
+2. [dytallix-docs](https://github.com/DytallixHQ/dytallix-docs) — canonical developer documentation and reference material.
+3. [dytallix-node](https://github.com/DytallixHQ/dytallix-node) — canonical public node and RPC backend source for testnet integration context.
 
 ---
 
