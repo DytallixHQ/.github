@@ -18,6 +18,16 @@ Dytallix is built so you never have to migrate.
 
 ---
 
+### Prerequisites
+
+- <a href="https://www.rust-lang.org/tools/install">Rust</a> (stable toolchain) and Cargo.  
+  Install via rustup (recommended):
+  ```bash
+  curl --proto '=https' --tlsv1.2 -sSf <a href="https://sh.rustup.rs">https://sh.rustup.rs</a> | sh
+  ```
+
+---
+
 ## Developer Path
 
 These are the three developer milestones Dytallix is optimizing for:
