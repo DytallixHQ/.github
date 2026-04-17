@@ -18,13 +18,17 @@ Dytallix is built so you never have to migrate.
 
 ---
 
-### Prerequisites
+## Prerequisites
 
-- <a href="https://www.rust-lang.org/tools/install">Rust</a> (stable toolchain) and Cargo.  
-  Install via rustup (recommended):
-  ```bash
-  curl --proto '=https' --tlsv1.2 -sSf <a href="https://sh.rustup.rs">https://sh.rustup.rs</a> | sh
-  ```
+Install [Rust](https://www.rust-lang.org/tools/install) with `rustup`. That
+provides the Rust toolchain, `cargo`, and target management used throughout the
+Dytallix Rust repositories.
+
+If you plan to build WASM contracts locally, add the standard target:
+
+```bash
+rustup target add wasm32-unknown-unknown
+```
 
 ---
 
@@ -46,16 +50,22 @@ These are the three developer milestones Dytallix is optimizing for:
 
 2. **First transaction on testnet: 2-3 minutes**
 
-   Create a wallet, print the D-Addr, request DGT and DRT from the faucet, then
-   submit a real transaction:
+   Create a funded sender wallet, create a separate recipient wallet, then
+   submit and verify a real transaction:
 
    ```bash
    cargo install --git https://github.com/DytallixHQ/dytallix-sdk.git dytallix-cli --bin dytallix
    dytallix init
-   dytallix send <daddr> 100
+   dytallix wallet create --name recipient
+   dytallix wallet list
+   dytallix wallet switch default
+   dytallix send <recipient-daddr> 100
+   dytallix wallet switch recipient
+   dytallix balance
    ```
 
-   Use the D-Addr printed by `dytallix init` or any other testnet address.
+   Use a different recipient address than the one printed by `dytallix init`
+   (do not self-send).
 
    Continue with: [first-transaction example](https://github.com/DytallixHQ/dytallix-sdk/blob/main/examples/first-transaction.rs) · [Explorer](https://dytallix.com/build/blockchain) · [Releases](https://github.com/DytallixHQ/dytallix-sdk/releases)
 
