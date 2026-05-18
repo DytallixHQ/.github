@@ -1,5 +1,11 @@
 # Dytallix
 
+[![Website](https://img.shields.io/badge/website-dytallix.com-0f766e)](https://dytallix.com)
+[![Docs](https://img.shields.io/badge/docs-live-2563eb)](https://dytallix.com/docs)
+[![Testnet](https://img.shields.io/badge/testnet-live-16a34a)](https://dytallix.com/build/blockchain)
+[![PQC](https://img.shields.io/badge/PQC-ML--DSA--65%20%7C%20ML--KEM--768-7c3aed)](https://github.com/DytallixHQ/dytallix-pqc)
+[![GitHub](https://img.shields.io/badge/GitHub-DytallixHQ-111827)](https://github.com/DytallixHQ)
+
 **The first solo-built PQC-native Layer 1 blockchain.**
 
 Keypair, faucet, transfer, and basic contract lifecycle are available for experimentation on the public testnet. Staking, governance, and some advanced or operator paths are not yet production-complete.
@@ -7,6 +13,36 @@ Keypair, faucet, transfer, and basic contract lifecycle are available for experi
 Dytallix implements NIST-standardized PQC primitives at every layer of the protocol. ML-DSA-65 for all transaction signing and validator votes. ML-KEM-768 for all P2P transport. Canonical Bech32m addresses. No ECDSA. No hybrid mode. No legacy accounts. Every address, every signature, every handshake is quantum-secure from inception.
 
 Designed, built, and deployed by one person in nine months. Testnet is live.
+
+**Lead solo developer:** [exocognosis](https://github.com/exocognosis) · [exocognosis.com](https://www.exocognosis.com)
+
+---
+
+## Project Metadata
+
+| Field | Value |
+|-------|-------|
+| Network | Public testnet live |
+| Protocol category | PQC-native Layer 1 blockchain |
+| Consensus signing | ML-DSA-65 |
+| P2P transport | ML-KEM-768 |
+| Address format | Canonical Bech32m D-Addr |
+| Runtime surface | SDK, CLI, node, faucet, explorer, docs, WASM contracts |
+| Lead solo developer | [exocognosis](https://github.com/exocognosis) |
+| Personal site | [exocognosis.com](https://www.exocognosis.com) |
+
+**Discovery tags:** `post-quantum-cryptography` · `pqc` · `quantum-safe` · `layer1` · `blockchain` · `testnet` · `ml-dsa` · `ml-kem` · `bech32m` · `rust` · `webassembly` · `wasm` · `sdk` · `cli` · `faucet` · `block-explorer`
+
+---
+
+## Active Tasks
+
+- [x] Publish public testnet developer path: keypair, faucet, transfer, and basic contract lifecycle.
+- [x] Open-source SDK, CLI, PQC primitives, node source, faucet source, explorer surface map, docs, and protocol contracts.
+- [x] Document NIST PQC baseline with ML-DSA-65 signing, ML-KEM-768 transport, and Bech32m addresses.
+- [ ] Complete staking, governance, and advanced operator paths for production readiness.
+- [ ] Formalize VRF construction, handshake analysis, and side-channel review before mainnet.
+- [ ] Expand third-party audits, protocol review, and contributor onboarding.
 
 ---
 
