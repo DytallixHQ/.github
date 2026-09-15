@@ -6,15 +6,15 @@
 [![PQC](https://img.shields.io/badge/PQC-ML--DSA--65%20%7C%20ML--KEM--768-7c3aed)](https://github.com/DytallixHQ/dytallix-pqc)
 [![GitHub](https://img.shields.io/badge/GitHub-DytallixHQ-111827)](https://github.com/DytallixHQ)
 
-**The first solo-built PQC-native Layer 1 blockchain.**
+**A PQC-native Layer 1 blockchain.**
 
 Keypair, faucet, transfer, and basic contract lifecycle are available for experimentation on the public testnet. Staking, governance, and some advanced or operator paths are not yet production-complete.
 
 Dytallix implements NIST-standardized PQC primitives at every layer of the protocol. ML-DSA-65 for all transaction signing and validator votes. ML-KEM-768 for all P2P transport. Canonical Bech32m addresses. No ECDSA. No hybrid mode. No legacy accounts. Every address, every signature, every handshake is quantum-secure from inception.
 
-Designed, built, and deployed by one person in nine months. Testnet is live.
+Dytallix is a small startup developing a post-quantum product ecosystem.
 
-**Lead solo developer:** [exocognosis](https://github.com/exocognosis) · [exocognosis.com](https://www.exocognosis.com)
+**Co-founders:** Andrew Holland and Rick Glenn. [About Dytallix](https://www.dytallix.com/company).
 
 ---
 
@@ -28,8 +28,8 @@ Designed, built, and deployed by one person in nine months. Testnet is live.
 | P2P transport | ML-KEM-768 |
 | Address format | Canonical Bech32m D-Addr |
 | Runtime surface | SDK, CLI, node, faucet, explorer, docs, WASM contracts |
-| Lead solo developer | [exocognosis](https://github.com/exocognosis) |
-| Personal site | [exocognosis.com](https://www.exocognosis.com) |
+| Organization | Small startup |
+| Co-founders | Andrew Holland and Rick Glenn |
 
 **Discovery tags:** `post-quantum-cryptography` · `pqc` · `quantum-safe` · `layer1` · `blockchain` · `testnet` · `ml-dsa` · `ml-kem` · `bech32m` · `rust` · `webassembly` · `wasm` · `sdk` · `cli` · `faucet` · `block-explorer`
 
@@ -188,7 +188,7 @@ Long-form protocol papers and supporting materials are indexed on the main resou
 
 ## Contributing
 
-Dytallix was built by one person. The transition to a quantum-secure web requires more than one person.
+We welcome contributors to the Dytallix protocol and developer tools.
 
 We are looking for cryptographers to audit the PQC implementation, systems engineers to stress-test the testnet, and developers to build the first PQC-native dApps.
 
