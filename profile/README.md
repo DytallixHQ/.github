@@ -128,8 +128,23 @@ still work with the code locally.
 | [dytallix-faucet](https://github.com/DytallixHQ/dytallix-faucet) | Faucet backend for the retired testnet | Retired; mainnet has no faucet |
 | [dytallix-explorer](https://github.com/DytallixHQ/dytallix-explorer) | Explorer surface map for the retired testnet | Retired |
 
-All current work happens in [DytallixHQ/dytallix](https://github.com/DytallixHQ/dytallix).
-The other repositories are kept for reference from the public testnet period.
+All current protocol work happens in [DytallixHQ/dytallix](https://github.com/DytallixHQ/dytallix).
+The other protocol repositories are kept for reference from the public testnet period.
+
+---
+
+## Products
+
+Post-quantum products built by Dytallix. They are separate from the mainnet
+protocol, and none of them is needed to run or verify the chain.
+
+| Repository | Description | Status |
+|------------|-------------|--------|
+| [QuantumSentinel](https://github.com/DytallixHQ/QuantumSentinel) | Finds quantum-vulnerable cryptography in websites, source code and approved networks, then builds a CBOM and migration plan. Open source (MIT). | Alpha |
+| [QuantumLink](https://github.com/DytallixHQ/QuantumLink) | Post-quantum mesh connectivity with verifiable peer identity. Product description, features, architecture and security model. | In development |
+| [QuantumVault](https://github.com/DytallixHQ/QuantumVault) | Post-quantum file protection with signed verification records. Product description, features, architecture and security model. | Demo / early access |
+
+The QuantumLink and QuantumVault repositories hold documentation only. Product pages are at [dytallix.com/ecosystem](https://dytallix.com/ecosystem).
 
 ---
 
